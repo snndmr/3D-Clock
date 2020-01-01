@@ -1,10 +1,9 @@
 "use strict";
 
 var canvas, gl, color;
-var bufferHourHand, bufferMinuteHand, bufferFrame;
-var hourHandVertices, minuteHandVertices, bufferCircle, verticesWall, bufferWall;
-var mColor;
-var vPosition;
+var bufferHourHand, bufferMinuteHand, bufferFrame, bufferWall;
+var hourHandVertices, minuteHandVertices, bufferCircle, verticesWall;
+var mColor, vPosition;
 var minuteHand, hourHand;
 var transformationMatrixLoc, modelMatrixLoc, perspectiveMatrixLoc;
 var translateMatrix, scaleMatrix, rotateMatrix, modelMatrix, perspectiveMatrix, transformationMatrix;
@@ -19,7 +18,6 @@ var rotX = 0,
     rotY = 0,
     rotZ = 0;
 var fovy = 50;
-
 var clockPosX = 0,
     clockPosY = 0,
     clockPosZ = 0;
@@ -27,7 +25,6 @@ var scale = 1;
 var hour = 0,
     minute = 0;
 var piece = 360;
-
 var isPlay = 1;
 
 window.onload = function init() {
